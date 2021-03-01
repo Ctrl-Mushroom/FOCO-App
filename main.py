@@ -1365,7 +1365,7 @@ class FoodyCoachApp(MDApp):
 
     def build(self):
         self.strng = Builder.load_string(help_str)
-        self.url = "https://cnq-foco-21-default-rtdb.firebaseio.com/Golden Pass/.json"  # FIREBASE/REALTIME DATABASE URL
+        self.url = ""  # FIREBASE/REALTIME DATABASE URL
         self.icon = 'png/Outsides/FOCO.png'
         return self.strng
 
@@ -1408,7 +1408,7 @@ class FoodyCoachApp(MDApp):
             self.strng.get_screen('loginscreen').manager.current = 'loginscreen'
 
     # AUTH KEY GO TO FIREBASE/PROJECT SETTINGS/SERVICE ACCOUNTS/DATABASE SECRETS/"SHOW THE SECRET"
-    auth = 'ditOiVUP7YFNo4IqJY2tmUxOnHyuGbbmx2gvm9Xs'
+    auth = ''
 
     def login(self):
         loginemail = self.strng.get_screen('loginscreen').ids.login_email.text
@@ -1440,44 +1440,44 @@ class FoodyCoachApp(MDApp):
         dietplan = self.strng.get_screen('loginscreen').ids.login_email.text
         self.strng.get_screen('dietscreen').ids.dtype.text = diet_type
         my_diet = '{"Diet": "%s"}' % diet_type
-        requests.patch("https://cnq-foco-21-default-rtdb.firebaseio.com/Golden Pass/%s.json" % dietplan, data=my_diet)
+        requests.patch("" % dietplan, data=my_diet)
 
     def req_diet(self, diet_req):
         dietreq = self.strng.get_screen('loginscreen').ids.login_email.text
         set_diet = '{"Diet Request": "%s"}' % diet_req
-        requests.patch("https://cnq-foco-21-default-rtdb.firebaseio.com/Golden Pass/%s.json" % dietreq, data=set_diet)
+        requests.patch("" % dietreq, data=set_diet)
 
     def change_routine(self, routine_type):
         routineplan = self.strng.get_screen('loginscreen').ids.login_email.text
         self.strng.get_screen('routinescreen').ids.rtype.text = routine_type
         my_routine = '{"Exercise": "%s"}' % routine_type
-        requests.patch("https://cnq-foco-21-default-rtdb.firebaseio.com/Golden Pass/%s.json" % routineplan,
+        requests.patch("" % routineplan,
                        data=my_routine)
 
     def req_routine(self, routine_req):
         routinereq = self.strng.get_screen('loginscreen').ids.login_email.text
         set_routine = '{"Exercise Request": "%s"}' % routine_req
-        requests.patch("https://cnq-foco-21-default-rtdb.firebaseio.com/Golden Pass/%s.json" % routinereq,
+        requests.patch("" % routinereq,
                        data=set_routine)
 
     def see_trophy(self, trophy_type):
         updatetrophy = self.strng.get_screen('loginscreen').ids.login_email.text
         self.strng.get_screen('profilescreen').ids.ttype.text = trophy_type
         my_trophy = '{"Achievements": "%s"}' % trophy_type
-        requests.patch("https://cnq-foco-21-default-rtdb.firebaseio.com/Golden Pass/%s.json" % updatetrophy,
+        requests.patch("" % updatetrophy,
                        data=my_trophy)
 
     def see_friends(self, friend_type):
         updatetrophy = self.strng.get_screen('loginscreen').ids.login_email.text
         self.strng.get_screen('profilescreen').ids.ftype.text = friend_type
         my_friends = '{"Friends": "%s"}' % friend_type
-        requests.patch("https://cnq-foco-21-default-rtdb.firebaseio.com/Golden Pass/%s.json" % updatetrophy,
+        requests.patch("" % updatetrophy,
                        data=my_friends)
 
     def send_temp(self, sendtemp):
         sendtemplate = self.strng.get_screen('loginscreen').ids.login_email.text
         send_temp = '{"Send Template to": "%s"}' % sendtemp
-        requests.patch("https://cnq-foco-21-default-rtdb.firebaseio.com/Golden Pass/%s.json" % sendtemplate,
+        requests.patch("" % sendtemplate,
                        data=send_temp)
 
 
