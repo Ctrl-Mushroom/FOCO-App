@@ -6,3 +6,7 @@
  - Cruz, Rigel Gabrielle
  - Nonato, Rijie Carl
  - Quiliza, Angelbert
+
+# .mp4
+ - http://bit.ly/FOCO-App_Ad
+ - http://bit.ly/FOCO-App_Highlights
