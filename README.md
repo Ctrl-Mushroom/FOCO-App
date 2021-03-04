@@ -7,6 +7,6 @@
  - Nonato, Rijie Carl
  - Quiliza, Angelbert
 
-# .mp4
+# Check this out!!!
  - http://bit.ly/FOCO-App_Ad
  - http://bit.ly/FOCO-App_Highlights
