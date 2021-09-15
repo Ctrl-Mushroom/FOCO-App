@@ -10,3 +10,5 @@
 # Check this out!!!
  - http://bit.ly/FOCO-App_Ad
  - http://bit.ly/FOCO-App_Highlights
+
+# [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/J3J123MH0)
